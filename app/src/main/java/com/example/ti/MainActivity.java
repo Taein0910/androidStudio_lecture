@@ -18,11 +18,12 @@ public class MainActivity extends AppCompatActivity {
         View button1 = findViewById(R.id.button1);
         View button2 = findViewById(R.id.button2);
         View button3 = findViewById(R.id.button3);
+        View button4 = findViewById(R.id.button4);
 
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "Toast가 출력되었습니다.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Toast를 출력하였습니다.", Toast.LENGTH_SHORT).show();
             }
 
         });
@@ -39,7 +40,16 @@ public class MainActivity extends AppCompatActivity {
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, SearchPictures.class);
+                Intent intent = new Intent(MainActivity.this, Calculator.class);
+                startActivity(intent);
+            }
+
+        });
+
+        button4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Drum.class);
                 startActivity(intent);
             }
 
