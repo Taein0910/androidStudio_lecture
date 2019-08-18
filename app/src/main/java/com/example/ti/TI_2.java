@@ -12,7 +12,7 @@ public class TI_2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ti_2);
 
-        View button1  = findViewById(R.id.button5);
+        View button1  = findViewById(R.id.button1);
 
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
