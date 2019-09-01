@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7341FF"
+    android:orientation="vertical"
+    tools:context=".CalenderActivity"
+    >
+
+    <TextView
+        android:id="@+id/myDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Make Your Dates"
+        android:textColor="#FFF"
+        android:textSize="23sp"
+        android:layout_marginLeft="105dp"
+        android:layout_marginTop="48dp"
+    />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="473dp"
+        android:layout_marginTop="34dp"
+        android:background="@drawable/bg_calen"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+
+
+        <CalendarView
+            android:id="@+id/calenderView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="34dp"
+            android:paddingTop="20dp"></CalendarView>
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="134dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="34dp"
+            android:background="@drawable/bg_btn"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="Save My Data"
+            android:textColor="#fff" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

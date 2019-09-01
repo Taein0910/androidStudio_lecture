@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Drum"></activity>
+        <activity android:name=".FlappyBird"></activity>
+        <activity android:name=".CalenderActivity" />
+        <activity android:name=".Basic" />
+        <activity android:name=".Drum" />
         <activity android:name=".Calculator" />
         <activity android:name=".TI_2" />
         <activity android:name=".MainActivity">

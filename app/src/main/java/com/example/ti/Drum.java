@@ -1,8 +1,10 @@
 package com.example.ti;
+
 import android.media.AudioManager;
 import android.media.SoundPool;
 import android.os.Bundle;
 import android.view.View;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Drum extends AppCompatActivity {
@@ -21,8 +23,8 @@ public class Drum extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        sp = new SoundPool(2, AudioManager.STREAM_MUSIC,0);
+        setContentView(R.layout.activity_drum);
+        sp = new SoundPool(10, AudioManager.STREAM_MUSIC,0);
         sound1 = sp.load(getApplicationContext(),R.raw.sound1,1);
         sound2 = sp.load(getApplicationContext(),R.raw.sound2,1);
         sound3 = sp.load(getApplicationContext(),R.raw.sound3,1);
