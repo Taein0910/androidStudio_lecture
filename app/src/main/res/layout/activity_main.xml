@@ -59,7 +59,7 @@
             android:backgroundTint="#CB52FF"
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:text="Flappy Bird 게임" />
+            android:text="알람 시계" />
 
         <Button
             android:id="@+id/button7"
@@ -67,7 +67,7 @@
             android:backgroundTint="#22F54C"
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:text="Button 7" />
+            android:text="Tic Tac Toe" />
 
         <Button
             android:id="@+id/button8"

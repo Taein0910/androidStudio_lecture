@@ -23,11 +23,13 @@ public class MainActivity extends AppCompatActivity {
         View button4 = findViewById(R.id.button4);
         View button5 = findViewById(R.id.button5);
         View button6 = findViewById(R.id.button6);
+        View button7 = findViewById(R.id.button7);
+
 
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "Toast를 출력하였습니다.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "안녕하세요 :)", Toast.LENGTH_SHORT).show();
             }
 
         });
@@ -71,7 +73,16 @@ public class MainActivity extends AppCompatActivity {
         button6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, FlappyBird.class);
+                Intent intent = new Intent(MainActivity.this, myClock.class);
+                startActivity(intent);
+            }
+
+        });
+
+        button7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, tictactoe.class);
                 startActivity(intent);
             }
 
