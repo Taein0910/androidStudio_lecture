@@ -24,6 +24,10 @@ public class MainActivity extends AppCompatActivity {
         View button5 = findViewById(R.id.button5);
         View button6 = findViewById(R.id.button6);
         View button7 = findViewById(R.id.button7);
+        View button8 = findViewById(R.id.button8);
+        View button9 = findViewById(R.id.button9);
+
+
 
 
         button1.setOnClickListener(new View.OnClickListener() {
@@ -83,6 +87,24 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, tictactoe.class);
+                startActivity(intent);
+            }
+
+        });
+
+        button8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, webView.class);
+                startActivity(intent);
+            }
+
+        });
+
+        button9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, memo.class);
                 startActivity(intent);
             }
 

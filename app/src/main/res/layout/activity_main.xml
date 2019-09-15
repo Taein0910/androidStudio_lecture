@@ -55,10 +55,10 @@
 
         <Button
             android:id="@+id/button6"
-            android:background="@drawable/bg_btn"
-            android:backgroundTint="#CB52FF"
             android:layout_width="match_parent"
             android:layout_height="100dp"
+            android:background="@drawable/bg_btn"
+            android:backgroundTint="#CB52FF"
             android:text="알람 시계" />
 
         <Button
@@ -75,7 +75,7 @@
             android:backgroundTint="#FF598D"
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:text="Button 8" />
+            android:text="웹뷰" />
 
         <Button
             android:id="@+id/button9"
@@ -83,7 +83,7 @@
             android:backgroundTint="#40E2FF"
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:text="Button 9" />
+            android:text="메모장" />
 
         <Button
         android:id="@+id/button10"

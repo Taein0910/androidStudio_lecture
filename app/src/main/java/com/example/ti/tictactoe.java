@@ -29,6 +29,9 @@ public class tictactoe extends AppCompatActivity implements View.OnClickListener
         textViewPlayer1 = findViewById(R.id.text_view_p1);
         textViewPlayer2 = findViewById(R.id.text_view_p2);
 
+        textViewPlayer1.setText("0 : 0");
+        textViewPlayer2.setText("");
+
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
                 String buttonID = "button_" + i + j;
@@ -153,6 +156,8 @@ public class tictactoe extends AppCompatActivity implements View.OnClickListener
     private void resetGame() {
         player1Points = 0;
         player2Points = 0;
+        textViewPlayer1.setText("게임을 시작하세요.");
+        textViewPlayer2.setText("");
         updatePointsText();
         resetBoard();
     }
